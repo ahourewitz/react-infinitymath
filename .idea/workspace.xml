@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="64533eba-0a82-497a-9f38-23c92464e8aa" name="Changes" comment="" />
+    <list default="true" id="64533eba-0a82-497a-9f38-23c92464e8aa" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/pages/Article1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Article2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/LayoutArticles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Digital.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Digital.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/MiddleSchool.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/MiddleSchool.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,7 +33,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2K0BAZr26mf9etj4hCf4Ie2TneG" />
   <component name="ProjectViewState">
@@ -33,16 +45,18 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/amandinehourewitz/WebstormProjects/infinitymath2/src",
+    "last_opened_file_path": "/Users/amandinehourewitz/WebstormProjects/infinitymath2/src/pages",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "settings.nodejs",
+    "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/pages" />
       <recent name="$PROJECT_DIR$/src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -59,11 +73,28 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1673101476098</updated>
-      <workItem from="1673101479272" duration="12496000" />
+      <workItem from="1673101479272" duration="17016000" />
+      <workItem from="1673186306563" duration="20000" />
+      <workItem from="1673186391017" duration="23000" />
+      <workItem from="1673186456319" duration="39000" />
+      <workItem from="1673186526871" duration="35000" />
+      <workItem from="1673186572394" duration="19000" />
+      <workItem from="1673186636650" duration="12830000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

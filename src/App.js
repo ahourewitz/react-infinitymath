@@ -1,7 +1,6 @@
 import logo from './logo.svg';
 import aboutme from './aboutme1.jpeg';
 import './App.css';
-import ReactDOM from "react-dom/client";
 import {BrowserRouter,Routes,Route} from "react-router-dom";
 import Layout from "./pages/Layout";
 import Home from "./pages/Home";
@@ -9,6 +8,8 @@ import MiddleSchool from "./pages/MiddleSchool";
 import TeacherPaper from "./pages/TeacherPaper";
 import Digital from "./pages/Digital";
 import NoPage from "./pages/NoPage";
+import {Slide} from 'react-slideshow-image';
+import 'react-slideshow-image/dist/styles.css'
 
 function App() {
     return (
@@ -25,8 +26,9 @@ function App() {
                     </Route>
                 </Routes>
             </BrowserRouter>
-
             <AboutMe/>
+            <FindHere/>
+            <Slideshow/>
             <Footer/>
             <header className="App-header">
                 <img src={logo} className="App-logo" alt="logo"/>
@@ -60,10 +62,45 @@ function AboutMe() {
                         <p>
                             A  teacher who has embarked on a
                         </p>
-                        <img src={aboutme}/>
+                        <img src={aboutme} alt={aboutme}/>
                     </div>
                 </div>
             </div>
+        </div>
+    )
+}
+function FindHere () {
+    return (
+        <div id="box1">
+            <div className="Article-Home">
+                <div className="type1">
+                    <div className="leftbox">
+                        <h2> What find here ? </h2>
+                        <p>
+                            A  teacher who has embarked on a
+                        </p>
+                        <img src={aboutme} alt={aboutme}/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}
+const Slideshow = () => {
+    return (
+        <div className="containerSlide">
+            <Slide>
+                <div className="each-slide">
+                    <div>
+                        <img src={aboutme} alt={aboutme}/>
+                    </div>
+                </div>
+                <div className="each-slide">
+                    <div>
+                        <img src={aboutme} alt={aboutme}/>
+                    </div>
+                </div>
+            </Slide>
         </div>
     )
 }
@@ -72,6 +109,5 @@ function Footer() {
     const year = new Date().getFullYear();
     return "Copyright ©" + year + " by InfinityMath. All Rights Reserved"
 }
-
 
 export default App;
