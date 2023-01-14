@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import aboutme from './aboutme1.jpeg';
 import './App.css';
-import {BrowserRouter,Routes,Route} from "react-router-dom";
+import {BrowserRouter, Routes, Route} from "react-router-dom";
 import Layout from "./pages/Layout";
 import Home from "./pages/Home";
 import MiddleSchool from "./pages/MiddleSchool";
@@ -10,6 +10,9 @@ import Digital from "./pages/Digital";
 import NoPage from "./pages/NoPage";
 import {Slide} from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
+import Article1 from "./pages/Article1";
+import Article2 from "./pages/Article2";
+import React from "react";
 
 function App() {
     return (
@@ -17,9 +20,9 @@ function App() {
             <MainTitle/>
             <BrowserRouter>
                 <Routes>
-                    <Route path="/" element={<Layout />}>
-                       <Route index element={<Home />} />
-                       <Route path="MiddleSchool" element={<MiddleSchool/>} />
+                    <Route path="/" element={<Layout/>}>
+                        <Route index element={<Home/>}/>
+                        <Route path="MiddleSchool/*" element={<MiddleSchool/>}/>
                         <Route path="TeacherPaper" element={<TeacherPaper/>}/>
                         <Route path="Digital" element={<Digital/>}/>
                         <Route path="*" element={<NoPage/>}/>
@@ -60,7 +63,7 @@ function AboutMe() {
                     <div className="leftbox">
                         <h2> About me </h2>
                         <p>
-                            A  teacher who has embarked on a
+                            A teacher who has embarked on a
                         </p>
                         <img src={aboutme} alt={aboutme}/>
                     </div>
@@ -69,7 +72,8 @@ function AboutMe() {
         </div>
     )
 }
-function FindHere () {
+
+function FindHere() {
     return (
         <div id="box1">
             <div className="Article-Home">
@@ -77,7 +81,7 @@ function FindHere () {
                     <div className="leftbox">
                         <h2> What find here ? </h2>
                         <p>
-                            A  teacher who has embarked on a
+                            A teacher who has embarked on a
                         </p>
                         <img src={aboutme} alt={aboutme}/>
                     </div>
@@ -86,6 +90,7 @@ function FindHere () {
         </div>
     )
 }
+
 const Slideshow = () => {
     return (
         <div className="containerSlide">
