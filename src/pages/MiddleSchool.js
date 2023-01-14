@@ -1,16 +1,29 @@
 import Article1 from "./Article1"
-import Article2 from "./Article1"
-import {BrowserRouter, Link, Route, Routes} from "react-router-dom";
+import Article2 from "./Article2"
+import {BrowserRouter, Link, Outlet, Route, Routes, useParams} from "react-router-dom";
 import React from "react";
+import LayoutArticles from "./LayoutArticles";
+import Article from "./ArticleCard";
+
+
+const articles = { // LEFT : Link Path. RIGHT : Component name
+    Article1 : Article1,
+    Article2 : Article2
+};
+
+function ArticleLoader() {
+    let { id } = useParams();
+    const SpecificArticle = articles[id];
+    return <SpecificArticle/>;
+}
 
 const MiddleSchool = () => {
     return (
         <>
             <Routes>
-                <Route path="Article1" element={<Article1/>}/>
-                <Route path="Article2" element={<Article2/>}/>
+                <Route path="" element={<LayoutArticles/>}/>
+                <Route path="/:id" element={<ArticleLoader/>}/>
             </Routes>
-            <Link to="/MiddleSchool/Article1">Article1</Link>
         </>
     )
 };
