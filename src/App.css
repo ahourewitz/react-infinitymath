@@ -11,16 +11,17 @@ body, html{
 
 .article_card_poster {
   object-fit: scale-down;
+  margin-top: 0;
+  margin-bottom: auto;
   /*min-width: 400px;*/
   width: 50%;
-  margin: auto;
 }
 
 .article_card {
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   /*margin: 0 0% 0 0%;*/
   width: 80%;
-  margin: auto;
+  margin: 50px auto;
 
 }
 
@@ -44,7 +45,7 @@ nav {
 
 .layout_articles {
   padding: 0;
-  margin: 0 0%;
+  margin: 0;
 }
 
 nav ul {
@@ -52,7 +53,7 @@ nav ul {
   padding: 0;
 }
 
-.MainTitle {
+.MainTitle, .article_card_title {
   text-shadow: 1px 1px 1px red,-1px -1px 1px red,-1px 1px 1px red,1px -1px 1px red;
   color: white;
   margin: 0;
@@ -69,6 +70,7 @@ nav ul {
 }
 
 .MainMenu {
+  z-index: 10;
   position: sticky;
   top: 0;
   margin: 0;
@@ -109,8 +111,9 @@ nav ul {
 }
 .Sidebar{
   position: sticky;
-  top: 30px;
-  height: calc(100vh - 30px);
+  top: 34px;
+  bottom: 500px;
+  height: calc(100vh - 34px);
   width: 20%;
   /*margin: 0;*/
   /*padding: 0;*/
