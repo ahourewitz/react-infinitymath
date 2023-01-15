@@ -1,5 +1,3 @@
-import logo from './logo.svg';
-import aboutme from './aboutme1.jpeg';
 import './App.css';
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import Layout from "./pages/Layout";
@@ -8,10 +6,7 @@ import MiddleSchool from "./pages/MiddleSchool";
 import TeacherPaper from "./pages/TeacherPaper";
 import Digital from "./pages/Digital";
 import NoPage from "./pages/NoPage";
-import {Slide} from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
-import Article1 from "./pages/Article1";
-import Article2 from "./pages/Article2";
 import React from "react";
 
 function App() {
@@ -35,7 +30,7 @@ function App() {
 }
 
 function MainTitle() {
-    return <h1>Infinitymath</h1>
+    return <h1 className={"MainTitle"}>INFINITY MATH</h1>
 }
 
 function Footer() {

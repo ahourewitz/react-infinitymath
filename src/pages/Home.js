@@ -59,10 +59,12 @@ const Slideshow = () => {
 const Home = () => {
     return (
         <>
-            <h1>Home</h1>
-            <AboutMe/>
-            <FindHere/>
-            <Slideshow/>
+            <div className={"Home"}>
+                <h1>Home</h1>
+                <AboutMe/>
+                <FindHere/>
+                <Slideshow/>
+            </div>
         </>
     )
 };

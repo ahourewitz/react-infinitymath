@@ -1,25 +1,36 @@
 * {
   text-align: center;
+  min-height: 0px;
+  min-width: 0px;
+}
+
+body, html{
+  margin: 0;
+  padding: 0;
 }
 
 .article_card_poster {
   object-fit: scale-down;
-  width: 400px;
-  max-width: 50%;
-  margin: 5px 5px;
+  /*min-width: 400px;*/
+  width: 50%;
+  margin: auto;
 }
 
 .article_card {
   border: 1px solid black;
-  margin: 0 0% 0 0%;
+  /*margin: 0 0% 0 0%;*/
   width: 80%;
   margin: auto;
 
 }
 
-.article_short_desc {
+.article_short_desc, .article_link {
   text-align: justify;
   padding: 5px;
+  margin: 20px;
+}
+
+.article_link{
 }
 
 html {
@@ -39,4 +50,82 @@ nav {
 nav ul {
   list-style: none;
   padding: 0;
+}
+
+.MainTitle {
+  text-shadow: 1px 1px 1px red,-1px -1px 1px red,-1px 1px 1px red,1px -1px 1px red;
+  color: white;
+  margin: 0;
+  padding: 20px;
+  background-color: darkred;
+  /*position: fixed;*/
+  /*left: 0;*/
+}
+
+
+.App{
+  /*position: sticky;*/
+  /*top: 0;*/
+}
+
+.MainMenu {
+  position: sticky;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  border: 2px solid black;
+  background: radial-gradient(circle, rgba(227,0,0,1) 0%, rgba(255,151,151,1) 0%, rgba(255,136,144,1) 0%, rgba(255,255,255,1) 100%);
+}
+
+.MainMenu ul {
+  display: flex;
+  height: 30px;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 20px;
+  margin: 0;
+}
+
+.MainMenu ul li {
+  /*border: 2px solid pink;*/
+}
+
+.MainMenu ul li a {
+  color: #ff3f3f;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px black,-1px -1px 1px black,-1px 1px 1px black,1px -1px 1px black;
+  font-size: 24px;
+
+}
+
+.ContentView {
+  /*position: relative;*/
+  display: flex;
+  flex-direction: row;
+}
+
+.MainContentView {
+  width: 80%;
+}
+.Sidebar{
+  position: sticky;
+  top: 30px;
+  height: calc(100vh - 30px);
+  width: 20%;
+  /*margin: 0;*/
+  /*padding: 0;*/
+  /*top:0;*/
+  /*height: 100%;*/
+  /*display:inline;*/
+  /*top: 50%;*/
+  /*left: 50%;*/
+  /*transform: translate(-50%, -50%);*/
+  /*min-height: 100%;*/
+  /*min-width: 100%;*/
+  background-color: pink;
+}
+
+.containerSlide {
+  min-height: 0px;
+  min-width: 0px;
 }

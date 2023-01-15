@@ -1,25 +1,46 @@
 import {Outlet, Link} from "react-router-dom";
+import * as PropTypes from "prop-types";
 
+function Sidebar(props) {
+    return <div className="Sidebar">
+        <p>Contenu de la sidebar</p>
+    </div>;
+}
+
+function ContentView(props) {
+    return <div className="ContentView">{props.children}</div>;
+}
+
+function MainContentView(props) {
+    return <div className={"MainContentView"}>{props.children}</div>;
+}
+
+MainContentView.propTypes = {children: PropTypes.node};
 const Layout = () => {
     return (
         <>
-            <nav>
-                <ul>
-                    <li>
-                        <Link to="/">Home</Link>
-                    </li>
-                    <li>
-                        <Link to="/MiddleSchool">MiddleSchool</Link>
-                    </li>
-                    <li>
-                        <Link to="/TeacherPaper">Teacherpaper</Link>
-                    </li>
-                    <li>
-                        <Link to="/Digital">Digital</Link>
-                    </li>
-                </ul>
-            </nav>
-            <Outlet/>
+                <nav className={"MainMenu"}>
+                    <ul>
+                        <li>
+                            <Link to="/">Home</Link>
+                        </li>
+                        <li>
+                            <Link to="/MiddleSchool">MiddleSchool</Link>
+                        </li>
+                        <li>
+                            <Link to="/TeacherPaper">Teacherpaper</Link>
+                        </li>
+                        <li>
+                            <Link to="/Digital">Digital</Link>
+                        </li>
+                    </ul>
+                </nav>
+                <ContentView>
+                    <MainContentView>
+                        <Outlet/>
+                    </MainContentView>
+                    <Sidebar/>
+                </ContentView>
         </>
     )
 }
