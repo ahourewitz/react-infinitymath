@@ -22,16 +22,16 @@ const Layout = () => {
                 <nav className={"MainMenu"}>
                     <ul>
                         <li>
-                            <Link to="/">Home</Link>
+                            <Link to="/">HOME</Link>
                         </li>
                         <li>
-                            <Link to="/MiddleSchool">MiddleSchool</Link>
+                            <Link to="/MiddleSchool">MIDDLESCHOOL</Link>
                         </li>
                         <li>
-                            <Link to="/TeacherPaper">Teacherpaper</Link>
+                            <Link to="/TeacherPaper">TEACHER PAPER</Link>
                         </li>
                         <li>
-                            <Link to="/Digital">Digital</Link>
+                            <Link to="/Digital">DIGITAL</Link>
                         </li>
                     </ul>
                 </nav>

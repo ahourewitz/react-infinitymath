@@ -35,7 +35,7 @@ function MainTitle() {
 
 function Footer() {
     const year = new Date().getFullYear();
-    return <p>Copyright ©{year} by InfinityMath. All Rights Reserved</p>
+    return <div className={"footer"}><p>Copyright ©{year} by InfinityMath. All Rights Reserved</p></div>
 }
 
 export default App;

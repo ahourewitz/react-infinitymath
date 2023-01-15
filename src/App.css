@@ -75,8 +75,9 @@ nav ul {
   top: 0;
   margin: 0;
   padding: 0;
-  border: 2px solid black;
-  background: radial-gradient(circle, rgba(227,0,0,1) 0%, rgba(255,151,151,1) 0%, rgba(255,136,144,1) 0%, rgba(255,255,255,1) 100%);
+  border: 0px solid black;
+  background: rgb(139,0,0);
+  background: linear-gradient(180deg, rgba(139,0,0,1) 0%, rgba(227,0,0,1) 4%, rgba(175,0,12,1) 98%, rgba(108,0,0,1) 100%);
 }
 
 .MainMenu ul {
@@ -84,7 +85,7 @@ nav ul {
   height: 30px;
   flex-direction: row;
   justify-content: center;
-  column-gap: 20px;
+  column-gap: 40px;
   margin: 0;
 }
 
@@ -93,10 +94,10 @@ nav ul {
 }
 
 .MainMenu ul li a {
-  color: #ff3f3f;
   text-decoration: none;
-  text-shadow: 1px 1px 1px black,-1px -1px 1px black,-1px 1px 1px black,1px -1px 1px black;
   font-size: 24px;
+  text-shadow: 1px 1px 1px black,-1px -1px 1px black,-1px 1px 1px black,1px -1px 1px black;
+  color: white;
 
 }
 
@@ -112,23 +113,22 @@ nav ul {
 .Sidebar{
   position: sticky;
   top: 34px;
-  bottom: 500px;
   height: calc(100vh - 34px);
   width: 20%;
-  /*margin: 0;*/
-  /*padding: 0;*/
-  /*top:0;*/
-  /*height: 100%;*/
-  /*display:inline;*/
-  /*top: 50%;*/
-  /*left: 50%;*/
-  /*transform: translate(-50%, -50%);*/
-  /*min-height: 100%;*/
-  /*min-width: 100%;*/
-  background-color: pink;
+  background: rgb(139,0,0);
+  background: linear-gradient(270deg, rgba(139,0,0,1) 0%, rgba(227,0,0,1) 4%, rgba(175,0,12,1) 98%, rgba(108,0,0,1) 100%);
 }
 
 .containerSlide {
   min-height: 0px;
   min-width: 0px;
+}
+
+.footer p{
+  border-top: 1px solid black;
+  margin: 0;
+  padding: 0;
+  color: white;
+  background: rgb(139,0,0);
+  background: linear-gradient(0deg, rgba(139,0,0,1) 0%, rgba(227,0,0,1) 4%, rgba(175,0,12,1) 98%, rgba(108,0,0,1) 100%);
 }
