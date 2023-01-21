@@ -9,7 +9,7 @@ function ArticleCard({title, img_src, short_description, link}){
                 <img className={"article_card_poster"} src={img_src} alt={title}/>
                 <div style={{display: "flex", flexDirection: "column", width:"50%", justifyContent: "space-between"}}>
                     <p className={"article_short_desc"}>{short_description}</p>
-                    <Link className={"article_link"} to={"/MiddleSchool/"+link}>Read more</Link>
+                    <Link className={"article_link"} to={link}>Read more</Link>
                 </div>
             </div>
         </div>

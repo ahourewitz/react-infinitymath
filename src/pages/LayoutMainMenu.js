@@ -1,11 +1,7 @@
 import {Outlet, Link} from "react-router-dom";
 import * as PropTypes from "prop-types";
+import Sidebar from "./Sidebar";
 
-function Sidebar(props) {
-    return <div className="Sidebar">
-        <p>Contenu de la sidebar</p>
-    </div>;
-}
 
 function ContentView(props) {
     return <div className="ContentView">{props.children}</div>;
@@ -16,10 +12,10 @@ function MainContentView(props) {
 }
 
 MainContentView.propTypes = {children: PropTypes.node};
-const Layout = () => {
+const LayoutMainMenu = () => {
     return (
         <>
-                <nav className={"MainMenu"}>
+                <nav className={"Menu MainMenu"}>
                     <ul>
                         <li>
                             <Link to="/">HOME</Link>
@@ -45,4 +41,4 @@ const Layout = () => {
     )
 }
 
-export default Layout;
+export default LayoutMainMenu;

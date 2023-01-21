@@ -1,12 +1,11 @@
 import './App.css';
 import {BrowserRouter, Routes, Route} from "react-router-dom";
-import Layout from "./pages/Layout";
+import LayoutMainMenu from "./pages/LayoutMainMenu";
 import Home from "./pages/Home";
 import MiddleSchool from "./pages/MiddleSchool";
 import TeacherPaper from "./pages/TeacherPaper";
 import Digital from "./pages/Digital";
 import NoPage from "./pages/NoPage";
-import 'react-slideshow-image/dist/styles.css'
 import React from "react";
 
 function App() {
@@ -15,7 +14,7 @@ function App() {
             <MainTitle/>
             <BrowserRouter>
                 <Routes>
-                    <Route path="/" element={<Layout/>}>
+                    <Route path="/" element={<LayoutMainMenu/>}>
                         <Route index element={<Home/>}/>
                         <Route path="MiddleSchool/*" element={<MiddleSchool/>}/>
                         <Route path="TeacherPaper" element={<TeacherPaper/>}/>

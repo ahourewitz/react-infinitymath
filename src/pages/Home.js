@@ -1,6 +1,6 @@
 import React from "react";
 import aboutme from "../aboutme1.jpeg";
-import {Slide} from "react-slideshow-image";
+import HomeSlideshow from "./HomeSlideshow";
 
 function AboutMe() {
     return (
@@ -38,32 +38,14 @@ function FindHere() {
     )
 }
 
-const Slideshow = () => {
-    return (
-        <div className="containerSlide">
-            <Slide>
-                <div className="each-slide">
-                    <div>
-                        <img src={aboutme} alt={aboutme}/>
-                    </div>
-                </div>
-                <div className="each-slide">
-                    <div>
-                        <img src={aboutme} alt={aboutme}/>
-                    </div>
-                </div>
-            </Slide>
-        </div>
-    )
-}
+
 const Home = () => {
     return (
         <>
             <div className={"Home"}>
-                <h1>Home</h1>
+                <HomeSlideshow/>
                 <AboutMe/>
                 <FindHere/>
-                <Slideshow/>
             </div>
         </>
     )
