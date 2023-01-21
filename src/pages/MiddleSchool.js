@@ -4,6 +4,7 @@ import LayoutGrade6 from "./LayoutGrade6";
 import LayoutGrade7 from "./LayoutGrade7";
 import LayoutGrade8 from "./LayoutGrade8";
 import Article from "./ArticleCard";
+import LayoutMiddleSchool from "./LayoutMiddleSchool";
 
 
 function ArticleLoader() {
@@ -46,7 +47,7 @@ const MiddleSchool = () => {
         <>
             <Routes>
                 <Route path="/" element={<MiddleSchoolMenu/>}>
-                    {/*<Route index element={<MiddleSchoolHome/>}/>*/}
+                    <Route index element={<LayoutMiddleSchool/>}/>
                     <Route path="Grade6" element={<LayoutGrade6/>}/>
                     <Route path="Grade7" element={<LayoutGrade7/>}/>
                     <Route path="Grade8" element={<LayoutGrade8/>}/>

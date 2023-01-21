@@ -1,7 +1,15 @@
+:root {
+  --main-accent-color: #d200e8;
+  --secondary-accent-color: rgb(159, 13, 255);
+  --background-color: rgba(157, 0, 255, 0.1);
+}
+
+
 * {
   text-align: center;
   min-height: 0px;
   min-width: 0px;
+  font-family: Roboto, serif;
 }
 
 body, html{
@@ -10,38 +18,58 @@ body, html{
 }
 
 .article_card_poster {
-  object-fit: scale-down;
-  margin-top: 0;
-  margin-bottom: auto;
+  /*object-fit: scale-down;*/
+  border-radius: 5vh;
+  margin: 5px;
   /*min-width: 400px;*/
   width: 50%;
 }
 
 .article_card {
-  background-color: #fff5f5;
-  border-left: 5px solid orange;
-  border-top: 5px solid orange;
-  border-radius: 2em;
+  /*border-left: 3px solid black;*/
+  /*border-top: 3px solid black;*/
+  /*border-right: 1px solid black;*/
+  /*border-bottom: 1px solid black;*/
+  border-radius: 5vh;
   overflow: hidden;
   /*margin: 0 0% 0 0%;*/
   width: 80%;
   margin: 50px auto;
+}
 
+.article_card:hover {
+  background-color: var(--background-color);
 }
 
 .article_card_title {
-  background-color: #fff5f5;
+  /*text-shadow: 2px 2px 2px black;*/
   font-size: 2em;
+  margin: 16px;
+  color: var(--secondary-accent-color)
 }
 
-.article_short_desc, .article_link {
+.article_short_desc {
   text-align: justify;
   padding: 5px;
   margin: 20px;
 }
 
+.article_link {
+  text-align: center;
+  padding: 5px;
+  margin: 10px auto;
+  color: white;
+  width: 10em;
+  background-color: var(--secondary-accent-color);
+  border-radius: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
 html {
-  background-color: white;
 }
 
 nav {
@@ -57,24 +85,16 @@ nav {
 
 nav ul {
   list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
-.MainTitle, .article_card_title {
-  /*text-shadow: 1px 1px 1px red,-1px -1px 1px red,-1px 1px 1px red,1px -1px 1px red;*/
-  color: darkorange;
+.MainTitle {
   font-size: 3em;
   margin: 0;
   padding: 20px;
-  /*position: fixed;*/
-  /*left: 0;*/
 }
 
 
 .App{
-  /*position: sticky;*/
-  /*top: 0;*/
 }
 
 .Menu {
@@ -83,8 +103,7 @@ nav ul {
   top: 0;
   margin: 0;
   padding: 0;
-  background: rgb(251, 139, 37);
-  /*background: radial-gradient(circle, rgba(255, 160, 0, 1) 0%, rgba(231, 145, 0, 1) 32%, rgba(214, 135, 0, 1) 82%, rgba(205, 129, 0, 1) 100%);*/
+  background-color: white;
 }
 
 .SubMenu {
@@ -97,7 +116,7 @@ nav ul {
   flex-direction: row;
   justify-content: center;
   column-gap: 40px;
-  margin: 0;
+  margin: auto;
 }
 
 .Menu ul li {
@@ -107,12 +126,13 @@ nav ul {
   display: inline-block;
   text-decoration: none;
   font-size: 24px;
-  text-shadow: 1px 1px 1px black,-1px -1px 1px black,-1px 1px 1px black,1px -1px 1px black;
-  color: white;
+  color: black;
+  font-weight: bold;
+  /*text-shadow: 1px 1px 1px black,-1px -1px 1px black,-1px 1px 1px black,1px -1px 1px black;*/
 }
 
 .Menu ul li a:hover {
-  color: orange;
+  color: var(--secondary-accent-color);
 }
 
 .ContentView {
@@ -122,7 +142,7 @@ nav ul {
 }
 
 .MainContentView {
-  width: 80%;
+  /*width: 80%;*/
 }
 .Sidebar{
   position: sticky;
