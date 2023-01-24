@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/331.4a9f316f.chunk.js","mappings":"sIAGA,UAHA,WACI,OAAO,uBAAG,yBACd,C","sources":["pages/articles/Article2.js"],"sourcesContent":["function Article2 () {\n    return <p> ceci est l'article 2</p>\n}\nexport default Article2"],"names":[],"sourceRoot":""}

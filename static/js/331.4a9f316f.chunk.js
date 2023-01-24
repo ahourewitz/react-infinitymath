@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkinfinitymath2=self.webpackChunkinfinitymath2||[]).push([[331],{331:function(i,n,t){t.r(n);var e=t(184);n.default=function(){return(0,e.jsx)("p",{children:" ceci est l'article 2"})}}}]);
+//# sourceMappingURL=331.4a9f316f.chunk.js.map
