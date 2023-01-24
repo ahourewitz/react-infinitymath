@@ -152,6 +152,7 @@ nav ul {
   height: calc(100vh - 34px);
   width: 20%;
   background: white;
+  overflow: hidden;
 }
 
 .containerSlide {
