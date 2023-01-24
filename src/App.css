@@ -18,11 +18,10 @@ body, html{
 }
 
 .article_card_poster {
-  /*object-fit: scale-down;*/
-  border-radius: 5vh;
-  margin: 5px;
-  /*min-width: 400px;*/
-  width: 50%;
+  border-radius: 10px;
+  margin: 10px;
+  align-self: center;
+
 }
 
 .article_card {
@@ -134,6 +133,9 @@ nav ul {
 .Menu ul li a:hover {
   color: var(--secondary-accent-color);
 }
+.Menu ul li a:focus {
+  color: var(--secondary-accent-color);
+}
 
 .ContentView {
   /*position: relative;*/
@@ -162,8 +164,7 @@ nav ul {
 }
 
 .footer p{
-  border-top: 1px inset black;
-  margin: 0;
+  margin: 1em;
   padding: 0;
   color: black;
   background: white;
