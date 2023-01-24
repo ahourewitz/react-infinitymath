@@ -100,7 +100,7 @@ nav ul {
   z-index: 10;
   position: sticky;
   top: 0;
-  margin: 0;
+  margin: 5px;
   padding: 0;
   background-color: white;
 }
@@ -130,12 +130,16 @@ nav ul {
   /*text-shadow: 1px 1px 1px black,-1px -1px 1px black,-1px 1px 1px black,1px -1px 1px black;*/
 }
 
-.Menu ul li a:hover {
+/*.Menu ul li a:hover {*/
+/*  color: var(--secondary-accent-color);*/
+/*}*/
+/*.Menu ul li a:focus {*/
+/*  color: var(--secondary-accent-color);*/
+/*}*/
+.Menu ul li .active {
   color: var(--secondary-accent-color);
 }
-.Menu ul li a:focus {
-  color: var(--secondary-accent-color);
-}
+
 
 .ContentView {
   /*position: relative;*/

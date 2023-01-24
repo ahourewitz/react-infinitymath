@@ -1,4 +1,4 @@
-import {BrowserRouter, Link, Outlet, Route, Routes, useParams} from "react-router-dom";
+import {BrowserRouter, NavLink, Outlet, Route, Routes, useParams} from "react-router-dom";
 import {React, lazy, Suspense} from "react";
 import LayoutGrade6 from "./LayoutGrade6";
 import LayoutGrade7 from "./LayoutGrade7";
@@ -23,13 +23,13 @@ function MiddleSchoolMenu() {
             <nav className={"Menu SubMenu"}>
                 <ul>
                     <li>
-                        <Link to={"Grade6"}>Grade 6</Link>
+                        <NavLink to={"Grade6"}>Grade 6</NavLink>
                     </li>
                     <li>
-                        <Link to={"Grade7"}>Grade 7</Link>
+                        <NavLink to={"Grade7"}>Grade 7</NavLink>
                     </li>
                     <li>
-                        <Link to={"Grade8"}>Grade 8</Link>
+                        <NavLink to={"Grade8"}>Grade 8</NavLink>
                     </li>
                 </ul>
             </nav>

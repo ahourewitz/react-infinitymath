@@ -1,4 +1,4 @@
-import {Outlet, Link} from "react-router-dom";
+import {Outlet, NavLink} from "react-router-dom";
 import * as PropTypes from "prop-types";
 import Sidebar from "./Sidebar";
 import React, {useState} from "react";
@@ -35,16 +35,16 @@ const LayoutMainMenu = () => {
             <nav className={"Menu MainMenu"}>
                 <ul>
                     <li>
-                        <Link to="/">HOME</Link>
+                        <NavLink to="/">HOME</NavLink>
                     </li>
                     <li>
-                        <Link to="/MiddleSchool">MIDDLESCHOOL</Link>
+                        <NavLink to="/MiddleSchool">MIDDLESCHOOL</NavLink>
                     </li>
                     <li>
-                        <Link to="/TeacherPaper">TEACHER PAPER</Link>
+                        <NavLink to="/TeacherPaper">TEACHER PAPER</NavLink>
                     </li>
                     <li>
-                        <Link to="/Digital">DIGITAL</Link>
+                        <NavLink to="/Digital">DIGITAL</NavLink>
                     </li>
                     <li style={{position: "absolute", right: "1em"}}>
                         <a onClick={hideSidebar} href={"#"}>SIDEBAR</a>
