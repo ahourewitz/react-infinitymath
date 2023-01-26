@@ -19,21 +19,16 @@ body, html{
 
 .article_card_poster {
   border-radius: 10px;
-  margin: 10px;
+  margin: 1px;
   align-self: center;
 
 }
 
 .article_card {
-  /*border-left: 3px solid black;*/
-  /*border-top: 3px solid black;*/
-  /*border-right: 1px solid black;*/
-  /*border-bottom: 1px solid black;*/
   border-radius: 5vh;
-  overflow: hidden;
-  /*margin: 0 0% 0 0%;*/
-  width: 80%;
-  margin: 50px auto;
+  width: 90vw;
+  min-width: 350px;
+  margin: 5px auto;
 }
 
 .article_card:hover {
@@ -49,16 +44,18 @@ body, html{
 
 .article_short_desc {
   text-align: justify;
-  padding: 5px;
-  margin: 20px;
+  padding: 1px;
+  margin: 10px;
+  overflow: scroll;
+  height: 25vw;
 }
 
 .article_link {
   text-align: center;
-  padding: 5px;
-  margin: 10px auto;
+  padding: 2px;
+  margin: 2px auto;
   color: white;
-  width: 10em;
+  width: 25vw;
   background-color: var(--secondary-accent-color);
   border-radius: 5px;
 }
