@@ -23,7 +23,7 @@ const LayoutMainMenu = () => {
 
     return (
         <>
-            <nav className={"Menu MainMenu"} onClick={() => setMenuActive(menuActive ? false : true)}>
+            <nav className={"Menu MainMenu"} onClick={() => setMenuActive(!menuActive)}>
                 <NavLink style={menuActive ? {display: 'block'} : null} to="/">HOME</NavLink>
                 <NavLink style={menuActive ? {display: 'block'} : null} to="/MiddleSchool">MIDDLESCHOOL</NavLink>
                 <NavLink style={menuActive ? {display: 'block'} : null} to="/TeacherPaper">TEACHER PAPER</NavLink>
