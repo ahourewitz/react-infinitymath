@@ -1,0 +1,57 @@
+@use 'src/theme';
+
+.article-card {
+  border-radius: 5vh;
+  width: 90vw;
+  min-width: 350px;
+  margin: 30px auto;
+}
+
+.article-card .preview {
+  display: flex;
+  @media (width < 768px) {
+    flex-direction: column;
+  }
+}
+
+.article-card .poster {
+  border-radius: 10px;
+  margin: 1px;
+  align-self: center;
+
+}
+
+.article-card:hover {
+  background-color: theme.$background-color;
+}
+
+.article-card .title {
+  text-shadow: 1px 1px 1px theme.$main-accent-color;
+  font-size: 2em;
+  margin: 16px;
+  color: theme.$secondary-accent-color
+}
+
+.article-card .description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.article-card p {
+  text-align: justify;
+  padding: 1px;
+  margin: 10px;
+  overflow: scroll;
+  height: 25vw;
+}
+
+.article-card a {
+  text-align: center;
+  padding: 2px;
+  margin: 2px auto;
+  color: white;
+  width: 25vw;
+  background-color: theme.$secondary-accent-color;
+  border-radius: 5px;
+}

@@ -1,4 +1,3 @@
-
 import './App.scss';
 import {BrowserRouter, Routes, Route, HashRouter} from "react-router-dom";
 import LayoutMainMenu from "./pages/LayoutMainMenu";
