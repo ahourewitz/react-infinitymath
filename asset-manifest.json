@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-infinitymath/static/css/main.7a1d27cf.css",
-    "main.js": "/react-infinitymath/static/js/main.0f819118.js",
+    "main.css": "/react-infinitymath/static/css/main.337268f9.css",
+    "main.js": "/react-infinitymath/static/js/main.1f59f231.js",
     "static/js/445.685624b8.chunk.js": "/react-infinitymath/static/js/445.685624b8.chunk.js",
     "static/js/331.4a9f316f.chunk.js": "/react-infinitymath/static/js/331.4a9f316f.chunk.js",
     "static/js/18.b64e5c44.chunk.js": "/react-infinitymath/static/js/18.b64e5c44.chunk.js",
@@ -34,15 +34,15 @@
     "static/media/roboto-latin-400.woff2": "/react-infinitymath/static/media/roboto-latin-400.176f8f5bd5f02b3abfcf.woff2",
     "static/media/roboto-latin-900.woff2": "/react-infinitymath/static/media/roboto-latin-900.870c8c1486f76054301a.woff2",
     "index.html": "/react-infinitymath/index.html",
-    "main.7a1d27cf.css.map": "/react-infinitymath/static/css/main.7a1d27cf.css.map",
-    "main.0f819118.js.map": "/react-infinitymath/static/js/main.0f819118.js.map",
+    "main.337268f9.css.map": "/react-infinitymath/static/css/main.337268f9.css.map",
+    "main.1f59f231.js.map": "/react-infinitymath/static/js/main.1f59f231.js.map",
     "445.685624b8.chunk.js.map": "/react-infinitymath/static/js/445.685624b8.chunk.js.map",
     "331.4a9f316f.chunk.js.map": "/react-infinitymath/static/js/331.4a9f316f.chunk.js.map",
     "18.b64e5c44.chunk.js.map": "/react-infinitymath/static/js/18.b64e5c44.chunk.js.map",
     "787.11faa87a.chunk.js.map": "/react-infinitymath/static/js/787.11faa87a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7a1d27cf.css",
-    "static/js/main.0f819118.js"
+    "static/css/main.337268f9.css",
+    "static/js/main.1f59f231.js"
   ]
 }
