@@ -45,45 +45,6 @@ nav ul {
 .App{
 }
 
-.Menu {
-  z-index: 10;
-  position: sticky;
-  top: 0;
-  margin: 5px;
-  padding: 0;
-  background-color: white;
-}
-
-.SubMenu {
-  top: 30px;
-}
-
-.Menu ul {
-  display: flex;
-  height: 30px;
-  flex-direction: row;
-  justify-content: center;
-  column-gap: 40px;
-  margin: auto;
-}
-
-.Menu ul li {
-}
-
-.Menu ul li a {
-  display: inline-block;
-  text-decoration: none;
-  font-size: 24px;
-  color: black;
-  font-weight: bold;
-  /*text-shadow: 1px 1px 1px black,-1px -1px 1px black,-1px 1px 1px black,1px -1px 1px black;*/
-}
-
-
-.Menu ul li .active {
-  color: theme.$secondary-accent-color;
-}
-
 
 .ContentView {
   /*position: relative;*/

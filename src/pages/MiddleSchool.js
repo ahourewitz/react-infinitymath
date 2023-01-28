@@ -3,8 +3,8 @@ import {React, lazy, Suspense} from "react";
 import LayoutGrade6 from "./LayoutGrade6";
 import LayoutGrade7 from "./LayoutGrade7";
 import LayoutGrade8 from "./LayoutGrade8";
-import Article from "./ArticleCard";
 import LayoutMiddleSchool from "./LayoutMiddleSchool";
+import './Menu.scss';
 
 
 function ArticleLoader() {
@@ -21,17 +21,9 @@ function MiddleSchoolMenu() {
     return (
         <>
             <nav className={"Menu SubMenu"}>
-                <ul>
-                    <li>
-                        <NavLink to={"Grade6"}>Grade 6</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to={"Grade7"}>Grade 7</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to={"Grade8"}>Grade 8</NavLink>
-                    </li>
-                </ul>
+                <NavLink to={"Grade6"}>Grade 6</NavLink>
+                <NavLink to={"Grade7"}>Grade 7</NavLink>
+                <NavLink to={"Grade8"}>Grade 8</NavLink>
             </nav>
             <Outlet/>
         </>

@@ -1,61 +1,37 @@
 import {Outlet, NavLink} from "react-router-dom";
 import * as PropTypes from "prop-types";
-import Sidebar from "./Sidebar";
-import React, {useState} from "react";
-
+import React from "react";
+import './Menu.scss';
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faBars} from "@fortawesome/free-solid-svg-icons";
 
 function ContentView(props) {
     return <div className="ContentView">{props.children}</div>;
 }
 
 function MainContentView(props) {
-    const sidebarWidthPercentage = props.width.toLocaleString("en", {style: "percent"});
     return <div className={"MainContentView"}
-                style={{width: sidebarWidthPercentage, position: "relative"}}>
-        {/*<button style={{display: "inline", position: "absolute", right: 0, top: "50%"}} onClick={hideSidebar}>>></button>*/}
+                style={{position: "relative"}}>
         {props.children}
     </div>;
 }
 
 MainContentView.propTypes = {children: PropTypes.node};
 const LayoutMainMenu = () => {
-    const [sidePanelWidth, setSidePanelWidth] = useState(0);
-
-    const hideSidebar = () => {
-        console.log(sidePanelWidth)
-        if (sidePanelWidth === 0){
-            setSidePanelWidth(0.2);
-        } else {
-            setSidePanelWidth(0);
-        }
-    }
 
     return (
         <>
             <nav className={"Menu MainMenu"}>
-                <ul>
-                    <li>
-                        <NavLink to="/">HOME</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/MiddleSchool">MIDDLESCHOOL</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/TeacherPaper">TEACHER PAPER</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/Digital">DIGITAL</NavLink>
-                    </li>
-                    <li style={{position: "absolute", right: "1em"}}>
-                        <a onClick={hideSidebar} href={"#"}>SIDEBAR</a>
-                    </li>
-                </ul>
+                <NavLink to="/">HOME</NavLink>
+                <NavLink to="/MiddleSchool">MIDDLESCHOOL</NavLink>
+                <NavLink to="/TeacherPaper">TEACHER PAPER</NavLink>
+                <NavLink to="/Digital">DIGITAL</NavLink>
+                <a className={"icon"} href={"#"}><FontAwesomeIcon icon={faBars}/></a>
             </nav>
             <ContentView>
-                <MainContentView width={1 - sidePanelWidth}>
+                <MainContentView>
                     <Outlet/>
                 </MainContentView>
-                <Sidebar width={sidePanelWidth}/>
             </ContentView>
         </>
     )

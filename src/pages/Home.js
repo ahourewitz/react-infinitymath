@@ -12,7 +12,7 @@ function AboutMe() {
                         <p>
                             A teacher who has embarked on a
                         </p>
-                        <img src={aboutme} alt={aboutme}/>
+                        <img style={{width: "80%"}}  src={aboutme} alt={aboutme}/>
                     </div>
                 </div>
             </div>
@@ -30,7 +30,7 @@ function FindHere() {
                         <p>
                             A teacher who has embarked on a
                         </p>
-                        <img src={aboutme} alt={aboutme}/>
+                        <img style={{width: "80%"}} src={aboutme} alt={aboutme}/>
                     </div>
                 </div>
             </div>

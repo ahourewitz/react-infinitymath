@@ -1,0 +1,50 @@
+@use 'src/theme';
+
+.Menu {
+  z-index: 10;
+  position: sticky;
+  top: 0;
+  padding: 0px 20px;
+  background-color: theme.$main-accent-color;
+  display: flex;
+  height: 30px;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 40px;
+}
+
+.SubMenu {
+  top: 30px;
+}
+
+.Menu .icon{
+  display: none;
+}
+
+@media screen and (max-width: 768px){
+  .Menu a:not(:first-child) {
+    display: none;
+  }
+  .Menu a.icon{
+    display: block;
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 10px;
+  }
+}
+
+
+.Menu a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 24px;
+  color: black;
+  font-weight: bold;
+  /*text-shadow: 1px 1px 1px black,-1px -1px 1px black,-1px 1px 1px black,1px -1px 1px black;*/
+}
+
+
+.Menu .active {
+  color: theme.$secondary-accent-color;
+}
