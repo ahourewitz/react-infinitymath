@@ -1,6 +1,6 @@
 import {Outlet, NavLink} from "react-router-dom";
 import * as PropTypes from "prop-types";
-import React from "react";
+import React, {useState} from "react";
 import './Menu.scss';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faBars} from "@fortawesome/free-solid-svg-icons";
@@ -18,15 +18,17 @@ function MainContentView(props) {
 
 MainContentView.propTypes = {children: PropTypes.node};
 const LayoutMainMenu = () => {
+    const [menuActive, setMenuActive] = useState(false);
+
 
     return (
         <>
-            <nav className={"Menu MainMenu"}>
-                <NavLink to="/">HOME</NavLink>
-                <NavLink to="/MiddleSchool">MIDDLESCHOOL</NavLink>
-                <NavLink to="/TeacherPaper">TEACHER PAPER</NavLink>
-                <NavLink to="/Digital">DIGITAL</NavLink>
-                <a className={"icon"} href={"#"}><FontAwesomeIcon icon={faBars}/></a>
+            <nav className={"Menu MainMenu"} onClick={() => setMenuActive(menuActive ? false : true)}>
+                <NavLink style={menuActive ? {display: 'block'} : null} to="/">HOME</NavLink>
+                <NavLink style={menuActive ? {display: 'block'} : null} to="/MiddleSchool">MIDDLESCHOOL</NavLink>
+                <NavLink style={menuActive ? {display: 'block'} : null} to="/TeacherPaper">TEACHER PAPER</NavLink>
+                <NavLink style={menuActive ? {display: 'block'} : null} to="/Digital">DIGITAL</NavLink>
+                <FontAwesomeIcon className={"icon"} icon={faBars}/>
             </nav>
             <ContentView>
                 <MainContentView>

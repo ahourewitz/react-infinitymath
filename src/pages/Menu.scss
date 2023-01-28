@@ -4,13 +4,15 @@
   z-index: 10;
   position: sticky;
   top: 0;
-  padding: 0px 20px;
+  padding: 0 20px;
   background-color: theme.$main-accent-color;
   display: flex;
-  height: 30px;
-  flex-direction: row;
+  //height: 30px;
   justify-content: center;
   column-gap: 40px;
+  @media screen and (max-width: 768px){
+    flex-direction: column;
+  }
 }
 
 .SubMenu {
@@ -22,21 +24,21 @@
 }
 
 @media screen and (max-width: 768px){
-  .Menu a:not(:first-child) {
+  .Menu a:not(.active), .Menu svg.icon {
     display: none;
   }
-  .Menu a.icon{
+  .Menu svg.icon{
     display: block;
     float: right;
     position: absolute;
     top: 0;
-    right: 10px;
+    right: 0;
   }
 }
 
 
-.Menu a {
-  display: inline-block;
+.Menu a, .Menu .icon {
+  //display: inline-block;
   text-decoration: none;
   font-size: 24px;
   color: black;
