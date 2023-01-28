@@ -1,6 +1,6 @@
 
 import './App.scss';
-import {BrowserRouter, Routes, Route} from "react-router-dom";
+import {BrowserRouter, Routes, Route, HashRouter} from "react-router-dom";
 import LayoutMainMenu from "./pages/LayoutMainMenu";
 import Home from "./pages/Home";
 import MiddleSchool from "./pages/MiddleSchool";
@@ -13,7 +13,7 @@ function App() {
     return (
         <div className="App">
             <MainTitle/>
-            <BrowserRouter>
+            <HashRouter>
                 <Routes>
                     <Route path="/" element={<LayoutMainMenu/>}>
                         <Route index element={<Home/>}/>
@@ -23,7 +23,7 @@ function App() {
                         <Route path="*" element={<NoPage/>}/>
                     </Route>
                 </Routes>
-            </BrowserRouter>
+            </HashRouter>
             <Footer/>
         </div>
     );
