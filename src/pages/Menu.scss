@@ -24,10 +24,10 @@
 }
 
 @media screen and (max-width: 768px){
-  .Menu a:not(.active), .Menu svg.icon {
+  .MainMenu a:not(.active), .Menu svg.icon {
     display: none;
   }
-  .Menu svg.icon{
+  .MainMenu svg.icon{
     display: block;
     float: right;
     position: absolute;
