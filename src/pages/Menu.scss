@@ -6,6 +6,8 @@
   top: 0;
   padding: 0 20px;
   background-color: theme.$main-accent-color;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
   display: flex;
   //height: 30px;
   justify-content: center;
@@ -20,8 +22,11 @@
 }
 
 .SubMenu {
+  display: inline-flex;
   top: 30px;
-  width: 100%;
+  //width: 100%;
+  border-radius: 20px;
+  border: 1px solid black;
 }
 
 .Menu .icon{
@@ -39,6 +44,10 @@
     top: 0;
     right: 0;
   }
+
+  .SubMenu {
+    flex-direction: column;
+  }
 }
 
 
@@ -46,12 +55,13 @@
   //display: inline-block;
   text-decoration: none;
   font-size: 24px;
-  color: black;
+  color: theme.$title-accent-color;
   font-weight: bold;
-  /*text-shadow: 1px 1px 1px black,-1px -1px 1px black,-1px 1px 1px black,1px -1px 1px black;*/
+  text-shadow: 1px 1px 1px black, 2px 2px 2px black, -1px -1px 1px black,-1px 1px 1px black,1px -1px 1px black;
 }
 
 
 .Menu .active {
-  color: theme.$secondary-accent-color;
+  color: theme.$main-accent-color;
+  font-weight: bold;
 }

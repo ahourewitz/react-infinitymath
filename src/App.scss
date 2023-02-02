@@ -36,9 +36,11 @@ nav ul {
 }
 
 .MainTitle {
-  font-size: 3em;
+  font-size: 4em;
   margin: 0;
   padding: 20px;
+  color: theme.$main-accent-color;
+  text-shadow: 1px 1px 1px black, 2px 2px 2px black, 3px 3px 3px black, 4px 4px 4px black,-1px -1px 1px theme.$secondary-accent-color;
 }
 
 

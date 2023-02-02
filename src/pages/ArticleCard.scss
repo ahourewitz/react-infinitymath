@@ -3,7 +3,7 @@
 .article-card {
   border-radius: 5vh;
   width: 90vw;
-  min-width: 350px;
+  //min-width: 350px;
   margin: 30px auto;
 }
 
@@ -43,7 +43,7 @@
   padding: 1px;
   margin: 10px;
   overflow: scroll;
-  height: 25vw;
+  //height: 25vw;
 }
 
 .article-card a {
@@ -51,7 +51,7 @@
   padding: 2px;
   margin: 2px auto;
   color: white;
-  width: 25vw;
+  width: 100px;
   background-color: theme.$secondary-accent-color;
   border-radius: 5px;
 }
