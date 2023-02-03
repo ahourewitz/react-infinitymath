@@ -21,7 +21,7 @@ function ArticleCard({title, img_src, short_description, link, imgRatioWidth=0.5
         (1-imgRatioWidth).toLocaleString("en", {style: "percent"}) :
         '100%';
     return (
-        <div className={"article-card"}>
+        <article className={"article-card"}>
             <h3 className={"title"}>{title}</h3>
             <div className={"preview"}>
                 <img className={"poster"} style={{maxWidth: imgRatioWidthStr}}  src={img_src} alt={title}/>
@@ -30,7 +30,7 @@ function ArticleCard({title, img_src, short_description, link, imgRatioWidth=0.5
                     <Link to={link}>Read more</Link>
                 </div>
             </div>
-        </div>
+        </article>
     )
 }
 

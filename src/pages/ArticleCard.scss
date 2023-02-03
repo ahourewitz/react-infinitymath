@@ -36,14 +36,17 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  @media screen and (max-width: 768px){
+    font-size: 0.75em;
+  }
 }
 
 .article-card p {
   text-align: justify;
   padding: 1px;
   margin: 10px;
-  overflow: scroll;
-  //height: 25vw;
+  overflow: auto;
+  height: 25vw;
 }
 
 .article-card a {

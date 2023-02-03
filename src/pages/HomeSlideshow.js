@@ -1,43 +1,36 @@
 import {Slide} from "react-slideshow-image";
 import 'react-slideshow-image/dist/styles.css'
+import slide1 from '../img/carousel/slide1.jpg'
+import slide2 from '../img/carousel/slide2.jpg'
+import slide3 from '../img/carousel/slide3.jpg'
 
-const spanStyle = {
-    padding: '20px',
-    background: '#efefef',
-    color: '#000000'
+const imgStyle = {
+    width: "100%",
+
 }
 
-const divStyle = {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundSize: 'cover',
-    height: '400px'
-}
 const slideImages = [
     {
-        url: 'https://images.unsplash.com/photo-1509721434272-b79147e0e708?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80',
+        url: slide1,
         caption: 'Slide 1'
     },
     {
-        url: 'https://images.unsplash.com/photo-1506710507565-203b9f24669b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1536&q=80',
+        url: slide2,
         caption: 'Slide 2'
     },
     {
-        url: 'https://images.unsplash.com/photo-1536987333706-fc9adfb10d91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80',
+        url: slide3,
         caption: 'Slide 3'
     },
 ];
 
 const HomeSlideshow = () => {
     return (
-        <div className="slide-container">
+        <div className="slide-container" style={{width: '40%', minWidth: '350px', margin:"0 auto"}}>
             <Slide>
                 {slideImages.map((slideImage, index)=> (
                     <div key={index}>
-                        <div style={{ ...divStyle, 'backgroundImage': `url(${slideImage.url})` }}>
-                            <span style={spanStyle}>{slideImage.caption}</span>
-                        </div>
+                        <img style={imgStyle} src={slideImage.url}/>
                     </div>
                 ))}
             </Slide>
