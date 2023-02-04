@@ -12,6 +12,7 @@
   //height: 30px;
   justify-content: center;
   column-gap: 40px;
+  align-items: center;
   @media screen and (max-width: 768px){
     flex-direction: column;
   }
@@ -34,15 +35,16 @@
 }
 
 @media screen and (max-width: 768px){
-  .MainMenu a:not(.active), .Menu svg.icon {
+  .MainMenu a:not(.active) {
     display: none;
   }
   .MainMenu svg.icon{
     display: block;
     float: right;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 2px;
+    right: 5px;
+    filter: drop-shadow(2px 2px 1px rgb(0 0 0 / 1.0));
   }
 
   .SubMenu {
@@ -51,7 +53,7 @@
 }
 
 
-.Menu a, .Menu .icon {
+.Menu a, .MainMenu svg.icon {
   //display: inline-block;
   text-decoration: none;
   font-size: 24px;

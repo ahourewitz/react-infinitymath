@@ -2,7 +2,7 @@ import './App.scss';
 import {BrowserRouter, Routes, Route, HashRouter} from "react-router-dom";
 import LayoutMainMenu from "./pages/LayoutMainMenu";
 import Home from "./pages/Home";
-import MiddleSchool from "./pages/MiddleSchool";
+import MiddleSchool from "./pages/MiddleSchoolMenu";
 import TeacherPaper from "./pages/TeacherPaper";
 import Digital from "./pages/Digital";
 import NoPage from "./pages/NoPage";

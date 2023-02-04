@@ -17,6 +17,16 @@ function MainContentView(props) {
 }
 
 MainContentView.propTypes = {children: PropTypes.node};
+
+function ExpandableNavLink({menuActive, to, children}) {
+    const preventMenuEnabling = (e) => {
+        if (!menuActive) {
+            e.stopPropagation();
+        }
+    }
+    return <NavLink onClick={preventMenuEnabling} style={menuActive ? {display: 'inline'} : null} to={to}>{children}</NavLink>;
+}
+
 const LayoutMainMenu = () => {
     const [menuActive, setMenuActive] = useState(false);
 
@@ -24,10 +34,10 @@ const LayoutMainMenu = () => {
     return (
         <>
             <nav className={"Menu MainMenu"} onClick={() => setMenuActive(!menuActive)}>
-                <NavLink style={menuActive ? {display: 'block'} : null} to="/">HOME</NavLink>
-                <NavLink style={menuActive ? {display: 'block'} : null} to="/MiddleSchool">MIDDLESCHOOL</NavLink>
-                <NavLink style={menuActive ? {display: 'block'} : null} to="/TeacherPaper">TEACHER PAPER</NavLink>
-                <NavLink style={menuActive ? {display: 'block'} : null} to="/Digital">DIGITAL</NavLink>
+                <ExpandableNavLink menuActive={menuActive} to={"/"}>Home</ExpandableNavLink>
+                <ExpandableNavLink menuActive={menuActive} to={"/MiddleSchool"}>Middle School</ExpandableNavLink>
+                <ExpandableNavLink menuActive={menuActive} to={"/TeacherPaper"}>Teacher Paper</ExpandableNavLink>
+                <ExpandableNavLink menuActive={menuActive} to={"/Digital"}>Digital</ExpandableNavLink>
                 <FontAwesomeIcon className={"icon"} icon={faBars}/>
             </nav>
             <ContentView>
