@@ -7,7 +7,8 @@ import TeacherPaper from "./pages/TeacherPaper";
 import Digital from "./pages/Digital";
 import NoPage from "./pages/NoPage";
 import React from "react";
-import ArticleLoader from "./components/ArticleLoader";
+import ArticleLoader from "./pages/ArticleLoader";
+import LayoutArticles from "./pages/LayoutArticles";
 
 function App() {
     return (
@@ -17,11 +18,12 @@ function App() {
                 <Routes>
                     <Route path="/" element={<LayoutMainMenu/>}>
                         <Route index element={<Home/>}/>
-                        <Route path="/MiddleSchool/*" element={<MiddleSchool/>}/>
                         <Route path="/TeacherPaper" element={<TeacherPaper/>}/>
                         <Route path="/Digital" element={<Digital/>}/>
-                        <Route path="/*" element={<NoPage/>}/>
+                        {/*<Route path=":section/:subsection" element={<LayoutArticles/>}/>*/}
                         <Route path=":section/:subsection/:article" element={<ArticleLoader/>}/>
+                        <Route path="/MiddleSchool/*" element={<MiddleSchool/>}/>
+                        <Route path="/*" element={<NoPage/>}/>
                     </Route>
                 </Routes>
             </HashRouter>

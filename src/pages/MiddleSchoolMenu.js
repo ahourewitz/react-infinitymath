@@ -5,6 +5,7 @@ import LayoutGrade7 from "./LayoutGrade7";
 import LayoutGrade8 from "./LayoutGrade8";
 import LayoutMiddleSchool from "./LayoutMiddleSchool";
 import './Menu.scss';
+import LayoutArticles from "./LayoutArticles";
 
 
 
@@ -27,9 +28,7 @@ const MiddleSchool = () => {
             <Routes>
                 <Route path="/" element={<MiddleSchoolMenu/>}>
                     <Route index element={<LayoutMiddleSchool/>}/>
-                    <Route path="Grade6" element={<LayoutGrade6/>}/>
-                    <Route path="Grade7" element={<LayoutGrade7/>}/>
-                    <Route path="Grade8" element={<LayoutGrade8/>}/>
+                    <Route path=":subsection" element={<LayoutArticles section={'MiddleSchool'}/>}/>
                 </Route>
             </Routes>
         </>

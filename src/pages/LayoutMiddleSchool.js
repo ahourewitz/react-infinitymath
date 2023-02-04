@@ -17,7 +17,6 @@ const LayoutMiddleSchool = () => {
                     </li>
                 </ul>
             </nav>
-            <Outlet/>
         </>
     )
 };

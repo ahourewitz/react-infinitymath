@@ -1,22 +1,9 @@
 import {Outlet, NavLink} from "react-router-dom";
-import * as PropTypes from "prop-types";
 import React, {useState} from "react";
 import './Menu.scss';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faBars} from "@fortawesome/free-solid-svg-icons";
 
-function ContentView(props) {
-    return <div className="ContentView">{props.children}</div>;
-}
-
-function MainContentView(props) {
-    return <div className={"MainContentView"}
-                style={{position: "relative"}}>
-        {props.children}
-    </div>;
-}
-
-MainContentView.propTypes = {children: PropTypes.node};
 
 function ExpandableNavLink({menuActive, to, children}) {
     const preventMenuEnabling = (e) => {
@@ -40,11 +27,7 @@ const LayoutMainMenu = () => {
                 <ExpandableNavLink menuActive={menuActive} to={"/Digital"}>Digital</ExpandableNavLink>
                 <FontAwesomeIcon className={"icon"} icon={faBars}/>
             </nav>
-            <ContentView>
-                <MainContentView>
-                    <Outlet/>
-                </MainContentView>
-            </ContentView>
+            <Outlet/>
         </>
     )
 }
