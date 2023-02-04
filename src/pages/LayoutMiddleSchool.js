@@ -1,7 +1,7 @@
 import {Outlet, Link} from "react-router-dom";
 import React from "react";
 import ArticleCard from "./ArticleCard";
-import backtoschool_notebook from "./articles/poster/backtoschool_notebook.svg"
+import backtoschool_notebook from "../articles/poster/backtoschool_notebook.svg"
 
 const LayoutMiddleSchool = () => {
     return (
