@@ -20,7 +20,7 @@ const LayoutArticles = (props) => {
                                                 title={article.title}
                                                 short_description={article.description}
                                                 img_src={articlesContext(`./${section}/${subsection}/cards/${article.img_src}`)}
-                                                link={`/articles/${section}/${subsection}/${article.link}`}
+                                                link={`/${section}/${subsection}/${article.link}`}
                                                 flexGrow={article.flexGrow ? article.flexGrow : 1}/>
                         })
                     }
