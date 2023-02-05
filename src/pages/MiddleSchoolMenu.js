@@ -1,9 +1,5 @@
 import {NavLink, Outlet, Route, Routes, useParams} from "react-router-dom";
-import {React, lazy, Suspense} from "react";
-import LayoutGrade6 from "./LayoutGrade6";
-import LayoutGrade7 from "./LayoutGrade7";
-import LayoutGrade8 from "./LayoutGrade8";
-import LayoutMiddleSchool from "./LayoutMiddleSchool";
+import {React} from "react";
 import './Menu.scss';
 import LayoutArticles from "./LayoutArticles";
 
@@ -27,7 +23,7 @@ const MiddleSchool = () => {
         <>
             <Routes>
                 <Route path="/" element={<MiddleSchoolMenu/>}>
-                    <Route index element={<LayoutMiddleSchool/>}/>
+                    <Route index element={<LayoutArticles section={'MiddleSchool'} subsection={'Home'}/>}/>
                     <Route path=":subsection" element={<LayoutArticles section={'MiddleSchool'}/>}/>
                 </Route>
             </Routes>

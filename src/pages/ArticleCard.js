@@ -2,7 +2,7 @@ import {Link} from "react-router-dom";
 import React, {useEffect, useState} from "react";
 import "./ArticleCard.scss"
 
-function ArticleCard({title, img_src, short_description, link, imgRatioWidth=0.5}){
+function ArticleCard({title, img_src, short_description, link, flexGrow=1}){
     const [matches, setMatches] = useState(
         window.matchMedia("(min-width: 768px)").matches
     )
@@ -14,18 +14,12 @@ function ArticleCard({title, img_src, short_description, link, imgRatioWidth=0.5
     }, []);
 
 
-    const imgRatioWidthStr = matches ?
-        imgRatioWidth.toLocaleString("en", {style: "percent"}) :
-        '100%';
-    const descRatioWidthStr = matches ?
-        (1-imgRatioWidth).toLocaleString("en", {style: "percent"}) :
-        '100%';
     return (
         <article className={"article-card"}>
             <h3 className={"title"}>{title}</h3>
             <div className={"preview"}>
-                <img className={"poster"} style={{maxWidth: imgRatioWidthStr}}  src={img_src} alt={title}/>
-                <div className={"description"} style={{width:descRatioWidthStr}}>
+                <img className={"poster"} style={{flex:flexGrow}}  src={img_src} alt={title}/>
+                <div className={"description"} style={{flex:1}}>
                     <p>{short_description}</p>
                     <Link to={link}>Read more</Link>
                 </div>

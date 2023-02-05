@@ -21,7 +21,7 @@ function App() {
                         <Route path="/TeacherPaper" element={<TeacherPaper/>}/>
                         <Route path="/Digital" element={<Digital/>}/>
                         {/*<Route path=":section/:subsection" element={<LayoutArticles/>}/>*/}
-                        <Route path=":section/:subsection/:article" element={<ArticleLoader/>}/>
+                        <Route path="/articles/:section/:subsection/:article" element={<ArticleLoader/>}/>
                         <Route path="/MiddleSchool/*" element={<MiddleSchool/>}/>
                         <Route path="/*" element={<NoPage/>}/>
                     </Route>

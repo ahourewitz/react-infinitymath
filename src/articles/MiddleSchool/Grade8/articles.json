@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Titre Article 2",
+    "description": "Description Article 2",
+    "img_src": "Article2.jpeg",
+    "link": "Article2"
+  },
+  {
+    "title": "Titre Article 2",
+    "description": "Description Article 2",
+    "img_src": "Article2.jpeg",
+    "link": "Article2"
+  },
+  {
+    "title": "Titre Article 1",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et\n        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea\n        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla\n        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est\n        laborum.",
+    "img_src": "Article1.jpeg",
+    "link": "Article1"
+  }
+]

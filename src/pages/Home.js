@@ -1,5 +1,5 @@
 import React from "react";
-import aboutme from "../aboutme1.jpeg";
+import aboutme from "../img/aboutme1.jpeg";
 import HomeSlideshow from "./HomeSlideshow";
 
 function AboutMe() {
