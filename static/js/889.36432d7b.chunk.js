@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkinfinitymath2=self.webpackChunkinfinitymath2||[]).push([[889],{889:function(t,i,a){t.exports=a.p+"static/media/backtoschool_notebook.96a73f3557c2d37fa274.svg"}}]);

@@ -1,1 +1,0 @@
-{"version":3,"file":"static/js/18.b64e5c44.chunk.js","mappings":"oIAGA,UAHA,WACI,OAAO,uBAAG,yBACd,C","sources":["pages/articles/Article3.js"],"sourcesContent":["function Article3 () {\n    return <p> ceci est l'article 3</p>\n}\nexport default Article3"],"names":[],"sourceRoot":""}
